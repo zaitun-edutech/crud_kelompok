@@ -1,0 +1,31 @@
+<%- layout('../layout/page') %>
+<a href="/kelompok/add" class="btn btn-info mb-3">Tambah</a>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nama Kelompok</th>
+      <th scope="col">Kecamatan</th>
+      <th scope="col">Desa</th>
+      <th scope="col">Jenis Usaha</th>
+      <th scope="col">Pemilik</th>
+      <th scope="col">Modal Usaha</th>
+      <th scope="col">Aksi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% var no = 1 %> <% kelompok.forEach(kel => { %>
+
+    <tr>
+      <th scope="row"><%= no++ %></th>
+      <td><%= kel.nama %></td>
+      <td><%= kel.kec %></td>
+      <td><%= kel.desa %></td>
+      <td><%= kel.usaha %></td>
+      <td><%= kel.pemilik %></td>
+      <td><%= kel.modal %></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>

@@ -1,0 +1,71 @@
+<%- layout('../layout/page') %>
+<div class="card p-4">
+  <form action="/kelompok/insert" method="post" role="form">
+    <div class="form-group">
+      <label for="exampleInputEmail">Nama</label>
+      <input
+        type="text"
+        name="nama"
+        class="form-control"
+        placeholder="Enter Nama"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail">Kecamatan</label>
+      <input
+        type="text"
+        name="kec"
+        class="form-control"
+        placeholder="Enter Kecamatan"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="desa">Desa</label>
+      <input
+        type="text"
+        name="desa"
+        class="form-control"
+        placeholder="Enter desa"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail">Jenis Usaha</label>
+      <input
+        type="text"
+        name="usaha"
+        class="form-control"
+        placeholder="Enter jenis usaha"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail">Nama Pemilik</label>
+      <input type="text" name="pemilik" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+      <label for="modal">Modal Usaha</label>
+      <input
+        type="number"
+        name="modal"
+        class="form-control"
+        placeholder="Enter Gaji"
+        required
+      />
+    </div>
+    <!-- <div class="form-group">
+              <label for="exampleInputEmail">Password</label>
+              <input
+                type="password"
+                name="password"
+                class="form-control"
+                placeholder="Enter Password"
+                required
+              />
+            </div> -->
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
