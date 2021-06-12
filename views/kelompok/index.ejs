@@ -1,8 +1,8 @@
 <%- layout('../layout/page') %>
-<a href="/kelompok/add" class="btn btn-info mb-3">Tambah</a>
+<a href="/kelompok/add" class="btn btn-primary mb-3">Tambah</a>
 
-<table class="table">
-  <thead>
+<table class="table table-hover table-striped">
+  <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
       <th scope="col">Nama Kelompok</th>
@@ -25,6 +25,18 @@
       <td><%= kel.usaha %></td>
       <td><%= kel.pemilik %></td>
       <td><%= kel.modal %></td>
+      <td>
+        <a href="kelompok/edit/<%= kel._id %> " class="btn btn-warning badge">
+          Edit</a
+        >
+        <a
+          href="kelompok/delete/<%= kel._id %>"
+          onclick='return confirm("apa betul disitu yakin mau hapus")'
+          class="btn btn-danger badge"
+        >
+          Hapus</a
+        >
+      </td>
     </tr>
     <% }) %>
   </tbody>
